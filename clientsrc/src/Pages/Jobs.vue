@@ -24,7 +24,7 @@
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header bg-primary shadow-sm">
-              <h4 class="modal-title text-white">New Request</h4>
+              <h4 class="modal-title text-white">New Memory</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body shadow-sm container text-secondary">
@@ -79,7 +79,7 @@
                     <input type="number" placeholder="0" required v-model="newJob.estimatedHours" />
                   </div>
                   <div class="col text-center">
-                    <button type="submit" class="btn btn-secondary btn-lg">Add Request</button>
+                    <button type="submit" class="btn btn-secondary btn-lg">Add Memory</button>
                   </div>
                 </div>
               </form>
