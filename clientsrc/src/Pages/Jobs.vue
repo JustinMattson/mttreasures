@@ -7,6 +7,9 @@
         <img src="../assets/img/proximity.png" style="width:50%;" />
 
         <h1 class="text-white darkness">Northwest Montana</h1>
+        <img src="../assets/img/FrontPorchView.jpg" style="width:50%;" />
+
+        <h1 class="text-white darkness">Front Porch View</h1>
         <!-- MODAL FORM -->
         <button
           type="button"
