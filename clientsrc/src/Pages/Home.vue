@@ -27,7 +27,7 @@
             <li>Power available at two sites on the property</li>
             <li>Two ponds (suitable for growing trout)</li>
             <li>Sauna, Pole Cabin</li>
-            <li>Lots of wild life (deer, elk, moose, bear, mountain lion, turtles, geese, turkeys, etc.</li>
+            <li>Lots of wild life (deer, elk, moose, bear, mountain lion, turtles, geese, turkeys, etc.)</li>
             <li>$749,000</li>
           </ul>
           <h1>
