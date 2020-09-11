@@ -2,7 +2,6 @@
   <div class="container-fluid">
     <div class="row bg-secondary text-center py-5">
       <div class="col-12">
-        col-6*2
         <img src="../assets/img/20_acres.png" style="width:50%;" />
         <h1 class="text-white darkness">Approximate Boundary Lines</h1>
         <img src="../assets/img/proximity.png" style="width:50%;" />
