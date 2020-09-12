@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top shadow-lg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-lg">
     <!-- <router-link class="navbar-brand" :to="{ name: 'Home' }">
       <img alt="Vue logo" src="../assets/logo.png" class="sml-img" />olen-Told
     </router-link>-->
@@ -16,7 +16,7 @@
         src="../assets/logo.png"
         style="height:30px;object-position: 11px;"
       />
-      <span style="margin-left:-15px;">ontana Treasures</span>
+      <span style="margin-left:-15px;">ontana Treasure - Home</span>
     </router-link>
     <button
       class="navbar-toggler"
@@ -31,11 +31,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item align-self-center" :class="{ active: $route.name == 'Home' }">
+        <!-- <li class="nav-item align-self-center" :class="{ active: $route.name == 'Home' }">
           <router-link :to="{ name: 'Home' }" class="nav-link">
             <h4 class="text-secondary">Home</h4>
           </router-link>
-        </li>
+        </li>-->
         <li class="nav-item align-self-center" :class="{ active: $route.name == 'Jobs' }">
           <router-link :to="{ name: 'Jobs' }" class="nav-link">
             <h5 class="text-secondary">Details</h5>

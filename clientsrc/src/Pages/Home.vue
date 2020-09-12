@@ -21,7 +21,7 @@
             <li>End of the road privacy. Outdoorman's dream!</li>
             <li>South side borders US Forest Service land</li>
             <li>20 acres</li>
-            <li>1900 sq ft log home</li>
+            <li>1800 sq ft log home</li>
             <li>2 bedrooms, 1.5 bath, loft + bonus room upstairs</li>
             <li>Two artesian wells</li>
             <li>Power available at two sites on the property</li>
@@ -43,8 +43,8 @@
               Eight minutes from West Glacier and Glacier National Park
             </li>
             <li>
-              <small>(8 miles)</small>
-              Hungry Horse Reservoir - excellent boating, fishing, camping
+              <small>(7 miles)</small>
+              Hungry Horse Dam/Reservoir - excellent boating, fishing, camping
             </li>
             <li>
               <small>(8 miles)</small>
@@ -77,6 +77,10 @@
             <li>
               <small>(36 miles)</small>
               Jewel Basin - 27 lakes and 35 miles of hiking
+            </li>
+            <li>
+              <small>(55 miles)</small>
+              Spotted Bear Ranch - Entrance to Bob Marshall Wilderness
             </li>
           </ul>
         </h3>

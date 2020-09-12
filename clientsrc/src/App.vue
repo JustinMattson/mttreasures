@@ -40,4 +40,9 @@ export default {
 .dark-text-shadow {
   text-shadow: 2px 2px 5px white;
 }
+.mx-img {
+  max-width: 45vw;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px black;
+}
 </style>

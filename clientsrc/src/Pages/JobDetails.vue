@@ -67,7 +67,7 @@
               <button type="submit" class="btn btn-outline-secondary ml-3">
                 <i
                   type="submit"
-                  class="far fa-save text-warning action shadow fa-2x text-shadow"
+                  class="far fa-save text-warning action shadow fa-2x light-text-shadow"
                   v-show="job.creatorEmail == profile.email"
                 ></i>
               </button>
@@ -144,9 +144,7 @@
       </div>-->
     </div>
 
-    <div
-      class="row d-flex justify-content-center bg-secondary text-primary text-shadow border-cstm p-3"
-    >
+    <div class="row d-flex justify-content-center bg-secondary text-primary border-cstm p-3">
       <div class="col-10 text-center" v-if="$auth.isAuthenticated">
         <h2 class="text-white light-text-shadow">Ask a Question or Leave a Comment:</h2>
       </div>
@@ -166,7 +164,7 @@
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header bg-primary shadow-sm">
-              <h4 class="modal-title text-white">New Comment</h4>
+              <h4 class="modal-title text-white light-text-shadow">New Comment</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body shadow-sm container text-primary">
@@ -175,7 +173,7 @@
                 <div class="row justify-content-center">
                   <div class="col text-center">
                     <!-- add v-model -->
-                    <h5 class="shadow-none text-dark">Ask a Question or Leave a Comment:</h5>
+                    <h5 class="text-dark">Ask a Question or Leave a Comment:</h5>
                     <textarea
                       class="unbold"
                       placeholder="Comment..."
@@ -459,11 +457,6 @@ export default {
 img {
   border-radius: 13px;
 }
-.mx-img {
-  max-width: 45vw;
-  border-radius: 10px;
-  box-shadow: 4px 4px 5px black;
-}
 .profile-pic {
   height: 150px;
   width: 150px;
@@ -474,15 +467,8 @@ img {
   position: absolute !important;
   bottom: 0 !important;
 }
-.text-shadow {
-  text-shadow: 2px 2px black;
-}
 .border-cstm {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-}
-
-.shadow-none {
-  text-shadow: none;
 }
 </style>
