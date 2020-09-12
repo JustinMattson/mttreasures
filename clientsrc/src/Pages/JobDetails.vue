@@ -156,12 +156,10 @@
         <button
           v-if="$auth.isAuthenticated"
           type="button"
-          class="btn btn-primary"
+          class="btn btn-primary text-light light-text-shadow"
           data-toggle="modal"
           data-target="#myModal"
-        >
-          <h5 class="text-light light-text-shadow">Add Comment</h5>
-        </button>
+        >Add Comment</button>
       </div>
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -195,7 +193,10 @@
 
                 <div class="row mt-3 align-items-end">
                   <div class="col text-center">
-                    <button type="submit" class="btn btn-secondary btn-lg">Add Comment</button>
+                    <button
+                      type="submit"
+                      class="btn btn-secondary btn-lg text-light light-text-shadow"
+                    >Add Comment</button>
                   </div>
                 </div>
               </form>
@@ -229,7 +230,7 @@
       <button
         v-if="$auth.isAuthenticated && comments.length >= 5"
         type="button"
-        class="btn btn-info btn-sm mb-3"
+        class="btn btn-secondary btn-sm mb-3 text-light light-text-shadow"
         data-toggle="modal"
         data-target="#myModal"
       >Add Comment</button>
@@ -266,7 +267,10 @@
 
               <div class="row mt-3 align-items-end">
                 <div class="col text-center">
-                  <button type="submit" class="btn btn-secondary btn-lg">Add Comment</button>
+                  <button
+                    type="submit"
+                    class="btn btn-secondary btn-lg text-light light-text-shadow"
+                  >Add Comment</button>
                 </div>
               </div>
             </form>
