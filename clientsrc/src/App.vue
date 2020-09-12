@@ -37,4 +37,7 @@ export default {
 .light-text-shadow {
   text-shadow: 2px 2px 5px black;
 }
+.dark-text-shadow {
+  text-shadow: 2px 2px 5px white;
+}
 </style>

@@ -14,9 +14,9 @@
         </div>
         <div class="d-flex text-left text-secondary align-self-center">
           <span>
-            <img class="rounded-circle" :src="job.creator.picture" style="height:75px;width:75px" />
+            <img class="rounded-circle" :src="job.creator.picture" style="height:50px;width:50px" />
           </span>
-          <span>
+          <span class="d-flex align-items-center">
             <h4 style="font-size:2vh" class="d-flex align-self-center pl-2">{{job.creator.name}}</h4>
             <span class="pl-2" v-show="requestorRating != 'No Ratings'">
               {{requestorRating}}/5

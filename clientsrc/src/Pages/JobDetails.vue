@@ -15,7 +15,22 @@
         <span class="row text-center pb-3">
           <div class="col">
             <h1 class="d-flex justify-content-between">
-              <span>Posted By:</span>
+              <span>
+                Posted By:
+                <div v-if="job.creator">
+                  <img
+                    class="rounded-circle"
+                    :src="job.creator.picture"
+                    style="height:50px;width:50px"
+                  />
+                  <b style="font-size:18pt">&nbsp;{{ job.creator.name }}</b>
+                </div>
+                <span v-show="requestorRating != 'No Ratings'">
+                  {{requestorRating}}/5
+                  <small v-if="numRatings > 1">({{numRatings}} ratings)</small>
+                  <small v-else>({{numRatings}} rating)</small>
+                </span>
+              </span>
               <span>
                 <i
                   class="far fa-edit text-secondary action"
@@ -26,24 +41,7 @@
             </h1>
           </div>
         </span>
-        <div class="row text-secondary bg-white py-3 shadow-lg mx-1" v-if="job.creator">
-          <div class="col-4 text-center">
-            <img class="rounded-circle" :src="job.creator.picture" style="height:7em;width:7em" />
-          </div>
-          <div class="col-8 d-flex flex-column justify-content-center">
-            <h2 style="font-size:2.5vw">&nbsp;{{ job.creator.name }}</h2>
-            <span v-show="requestorRating != 'No Ratings'">
-              {{requestorRating}}/5
-              <small v-if="numRatings > 1">({{numRatings}} ratings)</small>
-              <small v-else>({{numRatings}} rating)</small>
-            </span>
-            <!-- <h3 v-show="requestorRating != 'No Ratings'">
-              Requestor Rating: &nbsp;{{ requestorRating }}/5
-              <br />
-              <small>({{numRatings}} ratings)</small>
-            </h3>-->
-          </div>
-        </div>
+
         <div class="row py-3 mx-1">
           <div class="col bg-white shadow-lg">
             <h4>Description:</h4>
@@ -53,7 +51,7 @@
               <h5 class="unbold">General Location: {{ job.generalLocation }}</h5>
               <h5 class="unbold">Estimated Hours: {{ job.estimatedHours }}</h5>
               <h5 class="unbold">When: {{ when }}</h5>
-              <h5 class="unbold">Status: {{ job.jobStatus }}</h5>
+              <!-- <h5 class="unbold">Status: {{ job.jobStatus }}</h5> -->
             </div>
           </div>
         </div>
@@ -113,13 +111,12 @@
             </div>
             <br />
             <!-- dropdown -->
-            <select v-model="job.jobStatus">
-              <!-- <option disabled value="Job Status">Job Status:</option> -->
+            <!-- <select v-model="job.jobStatus">
               <option value="pending">Pending</option>
               <option value="completed">Completed</option>
               <option value="cancelled">Cancelled</option>
             </select>
-            <span class>&nbsp;Job Status</span>
+            <span class>&nbsp;Job Status</span>-->
 
             <!-- End Dropdown -->
           </div>
@@ -127,7 +124,7 @@
       </div>
       <!-- END Edit Job -->
 
-      <div class="col-12 d-flex justify-content-center m-3">
+      <!-- <div class="col-12 d-flex justify-content-center m-3">
         <div
           v-if="
             !isJobCreator && $auth.isAuthenticated && job.jobStatus == 'pending'
@@ -144,7 +141,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
 
     <div
@@ -163,7 +160,7 @@
           data-toggle="modal"
           data-target="#myModal"
         >
-          <h5 class="text-secondary">Add Comment</h5>
+          <h5 class="text-light light-text-shadow">Add Comment</h5>
         </button>
       </div>
       <div class="modal fade" id="myModal" role="dialog">
@@ -283,7 +280,7 @@
     <!-- END MODAL FORM -->
     <!-- END ADD COMMENT MODAL -->
 
-    <div class="row text-center bg-primary border-cstm py-3">
+    <!-- <div class="row text-center bg-primary border-cstm py-3">
       <div class="col-12 text-secondary" v-if="$auth.isAuthenticated">
         <h1>Sign Up List</h1>
       </div>
@@ -292,7 +289,7 @@
       <div class="col-12">
         <Queue v-for="queue in queues" :key="queue.id" :queue="queue" :queues="queues" />
       </div>
-    </div>
+    </div>-->
 
     <CustomFooter />
   </div>
