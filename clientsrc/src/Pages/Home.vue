@@ -14,7 +14,7 @@
     >
       <div class="col-md-12">
         <h1>
-          <i class="text-dark">Montana Treasures & Retreat</i>
+          <i class="text-dark">Montana Home on 20 Acres:</i>
         </h1>
         <h3>
           <ul class="text-left">
@@ -53,6 +53,10 @@
             <li>
               <small>(16 miles)</small>
               Middle Fork of Flathead River - some of Montana's best whitewater Rafting
+            </li>
+            <li>
+              <small>(17 miles)</small>
+              Glacier Park International Airport - Kalispell, MT
             </li>
             <li>
               <small>(20 miles)</small>

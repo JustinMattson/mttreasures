@@ -64,7 +64,11 @@
         </router-link>
       </span>
       <span class="navbar-text">
-        <button class="btn btn-success" @click="login" v-if="!$auth.isAuthenticated">Login</button>
+        <small
+          class="text-muted"
+          v-show="!$auth.isAuthenticated"
+        >Create account and log in for additional features ></small>
+        <button class="btn btn-success ml-2" @click="login" v-if="!$auth.isAuthenticated">Login</button>
         <button class="btn btn-danger" @click="logout" v-else>logout</button>
       </span>
     </div>

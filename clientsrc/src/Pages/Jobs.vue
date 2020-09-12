@@ -5,7 +5,11 @@
         <a
           href="https://www.google.com/maps/search/Montana%20Treasurers%20&%20Retreat,%20330%20Wagner%20Rd,%20Martin%20City,%20MT,%2059926?hl=en&source=opensearch"
         >
-          <img src="../assets/img/proximity.png" style="width:100%;" />
+          <img
+            class="mx-img border border-secondary"
+            src="../assets/img/proximity.png"
+            style="width:100%;"
+          />
         </a>
 
         <h1 class="text-white light-text-shadow pb-3">Northwest Montana</h1>
@@ -15,16 +19,105 @@
         <a
           href="https://www.google.com/maps/search/Montana%20Treasurers%20&%20Retreat,%20330%20Wagner%20Rd,%20Martin%20City,%20MT,%2059926?hl=en&source=opensearch"
         >
-          <img src="../assets/img/20_acres.png" style="width:100%;" />
+          <img
+            class="mx-img border border-secondary"
+            src="../assets/img/20_acres.png"
+            style="width:100%;"
+          />
         </a>
         <h1 class="text-white light-text-shadow pb-3">Approximate Property Boundary</h1>
       </div>
 
       <div class="col-12 col-md-6 col-lg-4">
-        <img src="../assets/img/FrontPorchView.jpg" style="width:100%;" />
-
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/FrontPorchView.jpg"
+          style="width:100%;"
+        />
         <h1 class="text-white light-text-shadow pb-3">Front Porch View</h1>
       </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/LivingRoom.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">Living Room</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/OpenLoft.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">Open Loft</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/MasterBedroom.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">Master Bedroom</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/Bedroom2a.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">2nd Bedroom</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/Bedroom2b.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">2nd Bedroom</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/Bathroom1.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">Downstairs Bathroom</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/Bathroom2.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">Downstairs Bathroom</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/SideEntryway2.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">Side Entry</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img
+          class="mx-img border border-secondary"
+          src="../assets/img/SideEntryway.jpg"
+          style="width:100%;"
+        />
+        <h1 class="text-white light-text-shadow pb-3">Side Entry</h1>
+      </div>
+
       <div class="col-12 mt-3">
         <!-- MODAL FORM -->
         <button
@@ -193,10 +286,8 @@ export default {
 };
 </script>
 <style scoped>
-/* .little-darkness {
-  text-shadow: 2px 2px black !important;
+.mx-img {
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px black;
 }
-.text-black {
-  color: black;
-} */
 </style>
