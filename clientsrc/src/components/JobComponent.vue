@@ -1,13 +1,13 @@
 <template>
   <div class="job">
     <!-- CARD TEMPLATE API -->
-    <div class="card shadow bg-primary text-secondary rounded-lg">
+    <div class="card shadow bg-primary text-secondary rounded-lg border border-secondary">
       <router-link :to="{ name: 'job', params: { jobId: job.id } }">
         <img :src="job.imgUrl" class="card-img-top p-2" alt="..." />
       </router-link>
       <div class="card-body p-2">
         <div class="d-flex text-left text-primary font-weight-bold font-lg justify-content-between">
-          <h3 class="text-white text-shadow">{{job.title}}</h3>
+          <h3 class="text-white light-text-shadow">{{job.title}}</h3>
           <span v-show="job.creatorEmail == profile.email">
             <i class="far fa-trash-alt action text-danger" @click="deleteJob"></i>
           </span>
@@ -35,15 +35,17 @@
           </span>-->
         </div>
         <h5 class="card-text text-left py-2">{{ job.description }}</h5>
-        <h4>General Location: {{ job.generalLocation }}</h4>
-        <h4>When: {{ when }}</h4>
+        <h6 class>General Location: {{ job.generalLocation }}</h6>
+        <p class>
+          <small>When: {{ when }}</small>
+        </p>
         <!-- <div>{{job.jobStatus}}</div> -->
         <div class="hide">{{expireCheck}}</div>
 
         <span class="d-flex justify-content-between" style="align-items:flex-end;">
           <router-link :to="{ name: 'job', params: { jobId: job.id } }">
             <button class="btn btn-secondary d-flex my-3 justify-content-center">
-              <i class="fas fa-hands-helping action text-white text-shadow font-lg">&nbsp;More Info</i>
+              <i class="fas fa-mountain action text-white light-text-shadow font-lg">&nbsp;More Info</i>
             </button>
           </router-link>
           <a href="#top">
@@ -153,14 +155,12 @@ export default {
   cursor: pointer;
 }
 .font-lg {
-  font-size: 20pt;
+  font-size: 16pt;
 }
 img {
   border-radius: 13px;
 }
-.text-shadow {
-  text-shadow: 2px 2px black;
-}
+
 .hide {
   display: none;
 }

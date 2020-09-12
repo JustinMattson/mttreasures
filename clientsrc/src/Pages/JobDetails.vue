@@ -1,7 +1,7 @@
 <template>
   <div class="jobDetails container-fluid">
     <!-- TOP ROW -->
-    <div class="row py-2 bg-secondary text-white text-center darkness shadow-lg">
+    <div class="row py-2 bg-secondary text-white text-center light-text-shadow shadow-lg">
       <div class="col">
         <h1>{{ job.title }}</h1>
       </div>
@@ -151,7 +151,7 @@
       class="row d-flex justify-content-center bg-secondary text-primary text-shadow border-cstm p-3"
     >
       <div class="col-10 text-center" v-if="$auth.isAuthenticated">
-        <h2 class="text-white darkness">Ask a Question or Leave a Comment:</h2>
+        <h2 class="text-white light-text-shadow">Ask a Question or Leave a Comment:</h2>
       </div>
       <!-- ADD COMMENT MODAL FORM -->
       <div class="col-12 d-flex justify-content-center">
@@ -480,9 +480,7 @@ img {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-.darkness {
-  text-shadow: 4px 4px black !important;
-}
+
 .shadow-none {
   text-shadow: none;
 }

@@ -87,7 +87,7 @@
     </div>
     <div class="row py-3 rounded-lg bg-secondary">
       <div class="col">
-        <h2 class="text-white">Requests You've Posted:</h2>
+        <h2 class="text-white">Things You've Posted:</h2>
         <requesterJob
           v-for="requesterJob in requesterJobs"
           :key="requesterJob.id"
@@ -110,7 +110,7 @@ export default {
     return {
       edit: false,
       fontSize: "10px",
-      color: "#808"
+      color: "#808",
     };
   },
   async mounted() {
@@ -156,7 +156,7 @@ export default {
     },
     numReqRatings() {
       return this.profile.requesterRating.length;
-    }
+    },
   },
   methods: {
     updateProfile() {
@@ -165,7 +165,7 @@ export default {
     },
     toggleEdit() {
       this.edit = !this.edit;
-    }
+    },
     // toggleMyBlogs() {
     //   this.myBlogs = !this.myBlogs;
     // },
@@ -178,8 +178,8 @@ export default {
   components: {
     JobQueue,
     VolunteerJob,
-    RequesterJob
-  }
+    RequesterJob,
+  },
 };
 </script>
 

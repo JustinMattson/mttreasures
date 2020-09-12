@@ -1,15 +1,31 @@
 <template>
   <div class="container-fluid">
     <div class="row bg-secondary text-center py-5">
-      <div class="col-12">
-        <img src="../assets/img/20_acres.png" style="width:50%;" />
-        <h1 class="text-white darkness">Approximate Boundary Lines</h1>
-        <img src="../assets/img/proximity.png" style="width:50%;" />
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="https://www.google.com/maps/search/Montana%20Treasurers%20&%20Retreat,%20330%20Wagner%20Rd,%20Martin%20City,%20MT,%2059926?hl=en&source=opensearch"
+        >
+          <img src="../assets/img/proximity.png" style="width:100%;" />
+        </a>
 
-        <h1 class="text-white darkness">Northwest Montana</h1>
-        <img src="../assets/img/FrontPorchView.jpg" style="width:50%;" />
+        <h1 class="text-white light-text-shadow pb-3">Northwest Montana</h1>
+      </div>
 
-        <h1 class="text-white darkness">Front Porch View</h1>
+      <div class="col-12 col-md-6 col-lg-4">
+        <a
+          href="https://www.google.com/maps/search/Montana%20Treasurers%20&%20Retreat,%20330%20Wagner%20Rd,%20Martin%20City,%20MT,%2059926?hl=en&source=opensearch"
+        >
+          <img src="../assets/img/20_acres.png" style="width:100%;" />
+        </a>
+        <h1 class="text-white light-text-shadow pb-3">Approximate Property Boundary</h1>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <img src="../assets/img/FrontPorchView.jpg" style="width:100%;" />
+
+        <h1 class="text-white light-text-shadow pb-3">Front Porch View</h1>
+      </div>
+      <div class="col-12 mt-3">
         <!-- MODAL FORM -->
         <button
           type="button"
@@ -18,7 +34,7 @@
           data-target="#myModal"
           v-if="$auth.isAuthenticated"
         >
-          <h2 class="little-darkness">Share some memories!</h2>
+          <h2 class="light-text-shadow">Share some memories!</h2>
         </button>
       </div>
       <div class="modal fade" id="myModal" role="dialog">
@@ -177,13 +193,10 @@ export default {
 };
 </script>
 <style scoped>
-.darkness {
-  text-shadow: 5px 5px black !important;
-}
-.little-darkness {
+/* .little-darkness {
   text-shadow: 2px 2px black !important;
 }
 .text-black {
   color: black;
-}
+} */
 </style>

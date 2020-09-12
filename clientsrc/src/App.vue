@@ -28,8 +28,13 @@ export default {
 @import "./assets/_variables.scss";
 @import "bootstrap";
 @import "./assets/_overrides.scss";
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 * {
-  font-family: "Fredoka One", cursive;
+  // font-family: "Fredoka One", cursive;
+  font-family: "Merriweather", serif;
+}
+.light-text-shadow {
+  text-shadow: 2px 2px 5px black;
 }
 </style>

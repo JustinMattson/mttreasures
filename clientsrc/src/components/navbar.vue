@@ -38,7 +38,7 @@
         </li>
         <li class="nav-item align-self-center" :class="{ active: $route.name == 'Jobs' }">
           <router-link :to="{ name: 'Jobs' }" class="nav-link">
-            <h5 class="text-secondary">Rental</h5>
+            <h5 class="text-secondary">Details</h5>
           </router-link>
         </li>
         <li
