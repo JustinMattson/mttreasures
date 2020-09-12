@@ -53,13 +53,15 @@ export default {
         recipientId: this.volunteerJob.creator.id,
         userId: this.$store.state.profile.id,
         jobId: this.volunteerJob.id,
-        rating: 0
-      }
+        rating: 0,
+      },
     };
   },
   computed: {
     vIndex() {
-      let num = this.volunteerJobs.findIndex(v => v.id == this.volunteerJob.id);
+      let num = this.volunteerJobs.findIndex(
+        (v) => v.id == this.volunteerJob.id
+      );
       return num % 2 == 0 ? "bg-light" : "altColor";
     },
     // vIndex() {
@@ -81,11 +83,13 @@ export default {
     },
     reviewSubmitted() {
       let id = this.$store.state.profile.id;
-      let data = this.volunteerJob.completedRequesterReviews.find(v => v == id);
+      let data = this.volunteerJob.completedRequesterReviews.find(
+        (v) => v == id
+      );
       if (data) {
         return true;
       } else return false;
-    }
+    },
   },
   methods: {
     submitRating() {
@@ -93,8 +97,8 @@ export default {
       this.volunteerJob.completedRequesterReviews.push(
         this.$store.state.profile.id
       );
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>

@@ -1,15 +1,15 @@
 <template>
   <div class="profile text-center container-fluid">
-    <div class="row bg-white text-center">
-      <div class="col-md-3 bg-secondary text-primary border border-dark rounded-right shadow">
+    <div class="row bg-white d-flex justify-content-center text-center">
+      <!-- <div class="col-md-3 bg-secondary text-primary border border-dark rounded-right shadow">
         <div class="pt-md-4 mt-md-4 py-2">
           <h3>Your Volunteer Rating:</h3>
           <h1>{{volunteerAverage}} / 5</h1>
           <small v-if="numVolRatings > 1">({{numVolRatings}} ratings)</small>
           <small v-else>({{numVolRatings}} rating)</small>
         </div>
-      </div>
-      <div class="col-md-6">
+      </div>-->
+      <div class="col-12 col-md-6">
         <h1>
           Welcome
           <span class="text-primary">{{ profile.name }}</span>
@@ -22,7 +22,7 @@
         <div class="font-lg unbold">{{ profile.email }}</div>
         <p class="text-muted unbold">Click on your profile image to edit user profile.</p>
       </div>
-      <div
+      <!-- <div
         class="col-md-3 bg-secondary text-center text-primary border border-dark rounded-left shadow"
       >
         <div class="pt-md-4 mt-md-4 py-2">
@@ -31,7 +31,7 @@
           <small v-if="numReqRatings > 1">({{numReqRatings}} ratings)</small>
           <small v-else>({{numReqRatings}} rating)</small>
         </div>
-      </div>
+      </div>-->
     </div>
 
     <form class="form text-left" v-if="edit" style="width:100%;" @submit.prevent="updateProfile">
@@ -61,7 +61,7 @@
       </div>
     </form>
 
-    <div class="row py-3 bg-white rounded-lg">
+    <!-- <div class="row py-3 bg-white rounded-lg">
       <div class="col">
         <h2 class="text-secondary">Future Opportunites:</h2>
         <jobQueue
@@ -84,7 +84,7 @@
           v-show="volunteerJob.jobStatus == 'completed' "
         />
       </div>
-    </div>
+    </div>-->
     <div class="row py-3 rounded-lg bg-secondary">
       <div class="col">
         <h2 class="text-white">Things You've Posted:</h2>
