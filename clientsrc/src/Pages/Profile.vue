@@ -87,7 +87,7 @@
     </div>-->
     <div class="row py-3 rounded-lg bg-secondary">
       <div class="col">
-        <h2 class="text-white">Things You've Posted:</h2>
+        <h2 class="text-white light-text-shadow">Things You've Posted:</h2>
         <requesterJob
           v-for="requesterJob in requesterJobs"
           :key="requesterJob.id"
