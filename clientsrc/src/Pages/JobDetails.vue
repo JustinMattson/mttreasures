@@ -49,8 +49,8 @@
             <div></div>
             <div class="col">
               <h5 class="unbold">General Location: {{ job.generalLocation }}</h5>
-              <h5 class="unbold">Estimated Hours: {{ job.estimatedHours }}</h5>
-              <h5 class="unbold">When: {{ when }}</h5>
+              <!-- <h5 class="unbold">Estimated Hours: {{ job.estimatedHours }}</h5> -->
+              <h5 class="unbold">Post expires: {{ when }}</h5>
               <!-- <h5 class="unbold">Status: {{ job.jobStatus }}</h5> -->
             </div>
           </div>
@@ -96,16 +96,16 @@
               v-model="job.generalLocation"
               style="width:100%;"
             />
-            Hours:
+            <!-- Hours:
             <input
               class="unbold"
               v-model="job.estimatedHours"
               style="width:100%;"
-            />
+            />-->
             <p />
-            <div class="unbold">
+            <!-- <div class="unbold">
               <input type="date" v-model="job.startDate" /> Start Date
-            </div>
+            </div>-->
             <div class="unbold">
               <input type="date" v-model="job.endDate" /> End Date
             </div>
@@ -308,7 +308,8 @@ export default {
     return {
       newComment: {},
       editForm: false,
-      jobStatuses: ["pending", "completed", "cancelled"],
+      // jobStatuses: ["pending", "completed", "cancelled"],
+      jobStatuses: ["pending", "cancelled"],
     };
   },
   onRouterLeave(to, from, next) {
@@ -355,6 +356,8 @@ export default {
       }
     },
     when() {
+      // FIXME for some reason, as of 09/12/2020, dates prior to 09/11/2021 toggle to completed.
+      // REVIEW I removed the status 'completed'
       if (this.job.startDate == this.job.endDate) {
         return moment(String(this.job.startDate)).format("MM/DD/YYYY");
       } else {
@@ -401,8 +404,10 @@ export default {
       this.editForm = !this.editForm;
     },
     editJob() {
-      this.job.startDate = moment(this.job.startDate).format("MM-DD-YYYY");
+      // this.job.startDate = moment(this.job.startDate).format("MM-DD-YYYY");
       this.job.endDate = moment(this.job.endDate).format("MM-DD-YYYY");
+      this.job.startDate = this.job.endDate;
+      this.job.status = "pending";
       if (this.job.jobStatus == "cancelled") {
         swal({
           title: "Are you sure?",

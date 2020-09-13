@@ -37,7 +37,7 @@
         <h5 class="card-text text-left py-2">{{ job.description }}</h5>
         <h6 class>General Location: {{ job.generalLocation }}</h6>
         <p class>
-          <small>When: {{ when }}</small>
+          <small>Post expires: {{ when }}</small>
         </p>
         <!-- <div>{{job.jobStatus}}</div> -->
         <div class="hide">{{expireCheck}}</div>
@@ -107,9 +107,10 @@ export default {
       // Total ratings of requestor for this job
       return this.job.jobCreatorRatings.length;
     },
+    // NOTE format needs to be Year, Month, Day in order to perform the inequality.
     expireCheck() {
-      let jobDate = moment(String(this.job.endDate)).format("MM/DD/YYYY");
-      let currentDate = moment(String(new Date())).format("MM/DD/YYYY");
+      let jobDate = moment(String(this.job.endDate)).format("YYYY/MM/DD");
+      let currentDate = moment(String(new Date())).format("YYYY/MM/DD");
       if (jobDate < currentDate) {
         this.job.jobStatus = "completed";
         this.$store.dispatch("changeJobStatus", this.job);

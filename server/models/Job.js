@@ -8,7 +8,7 @@ const Job = new Schema(
     description: { type: String, required: true },
     imgUrl: { type: String, default: "//placehold.it/200x200" },
     generalLocation: { type: String, required: true },
-    estimatedHours: { type: Number, required: true },
+    estimatedHours: { type: Number, required: false, default: 1 },
     startDate: { type: Date, required: true },
     endDate: { type: Date, required: true },
     requesterId: { type: String, required: true },
@@ -19,6 +19,7 @@ const Job = new Schema(
     jobStatus: {
       type: String,
       enum: ["pending", "completed", "cancelled"],
+      // enum: ["pending", "cancelled"],
       required: true,
       default: "pending",
     },

@@ -89,16 +89,16 @@
     <div class="row d-flex bg-light justify-content-around py-3">
       <router-link
         :to="{name: 'Jobs'}"
-        class="col-12 col-md-5 bg-primary shadow-lg border-3 box-height no-line d-flex align-items-center justify-content-center rounded my-1"
+        class="col-12 col-md-5 bg-primary shadow-lg border-3 border-dark box-height no-line d-flex align-items-center justify-content-center rounded my-1"
       >
-        <h1 class="text-secondary text-shadow">More Info</h1>
+        <h1 class="text-secondary text-shadow">More Info...</h1>
       </router-link>
-      <router-link
+      <!-- <router-link
         :to="{name: 'Jobs'}"
-        class="col-12 col-md-5 bg-secondary shadow-lg border-4 box-height no-line d-flex align-items-center justify-content-center rounded my-1"
+        class="col-12 col-md-5 bg-secondary shadow-lg border-3 border-dark box-height no-line d-flex align-items-center justify-content-center rounded my-1"
       >
         <h1 class="text-primary text-shadow">Amazing!</h1>
-      </router-link>
+      </router-link>-->
     </div>
     <div class="row d-flex justify-content-around bg-secondary py-5">
       <div class="card col-12 col-md-3 height-fix my-1 bg-primary text-secondary shadow">
