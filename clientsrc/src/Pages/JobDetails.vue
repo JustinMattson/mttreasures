@@ -308,8 +308,7 @@ export default {
     return {
       newComment: {},
       editForm: false,
-      // jobStatuses: ["pending", "completed", "cancelled"],
-      jobStatuses: ["pending", "cancelled"],
+      jobStatuses: ["pending", "completed", "cancelled"],
     };
   },
   onRouterLeave(to, from, next) {
@@ -356,8 +355,6 @@ export default {
       }
     },
     when() {
-      // FIXME for some reason, as of 09/12/2020, dates prior to 09/11/2021 toggle to completed.
-      // REVIEW I removed the status 'completed'
       if (this.job.startDate == this.job.endDate) {
         return moment(String(this.job.startDate)).format("MM/DD/YYYY");
       } else {
