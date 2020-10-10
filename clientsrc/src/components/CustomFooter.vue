@@ -4,12 +4,12 @@
       <div class="col-6 text-center">
         Christine Brown
         <br />
-        <a href="https://www.facebook.com/christine.brown.3154" target="_blank">
+        <!-- <a href="https://www.facebook.com/christine.brown.3154" target="_blank">
           <i
             class="fa fa-facebook-official text-dark"
             aria-hidden="true"
           ></i> </a
-        >&nbsp;
+        >&nbsp; -->
         <a href="mailto:cbfreemt@gmail.com" class="text-dark">
           <i class="fa fa-envelope-o text-dark" aria-hidden="true"></i>
         </a>
