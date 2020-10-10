@@ -27,7 +27,10 @@
             <li>Power available at two sites on the property</li>
             <li>Two ponds (suitable for growing trout)</li>
             <li>Sauna, Pole Cabin</li>
-            <li>Lots of wild life (deer, elk, moose, bear, mountain lion, turtles, geese, turkeys, etc.)</li>
+            <li>
+              Lots of wild life (deer, elk, moose, bear, mountain lion, turtles,
+              geese, turkeys, etc.)
+            </li>
             <li>$749,000</li>
           </ul>
           <h1>
@@ -52,7 +55,8 @@
             </li>
             <li>
               <small>(16 miles)</small>
-              Middle Fork of Flathead River - some of Montana's best whitewater Rafting
+              Middle Fork of Flathead River - some of Montana's best whitewater
+              Rafting
             </li>
             <li>
               <small>(17 miles)</small>
@@ -72,7 +76,8 @@
             </li>
             <li>
               <small>(33 miles)</small>
-              Flathead Lake - largest natural freshwater lake west of the Mississippi
+              Flathead Lake - largest natural freshwater lake west of the
+              Mississippi
             </li>
             <li>
               <small>(36 miles)</small>
@@ -88,7 +93,7 @@
     </div>
     <div class="row d-flex bg-light justify-content-around py-3">
       <router-link
-        :to="{name: 'Jobs'}"
+        :to="{ name: 'Jobs' }"
         class="col-12 col-md-5 bg-primary shadow-lg border-3 border-dark box-height no-line d-flex align-items-center justify-content-center rounded my-1"
       >
         <h1 class="text-secondary text-shadow">More Info...</h1>
@@ -101,9 +106,11 @@
       </router-link>-->
     </div>
     <div class="row d-flex justify-content-around bg-secondary py-5">
-      <div class="card col-12 col-md-3 height-fix my-1 bg-primary text-secondary shadow">
+      <div
+        class="card col-12 col-md-3 height-fix my-1 bg-primary text-secondary shadow"
+      >
         <img
-          src="https://i.pinimg.com/originals/0d/c5/7b/0dc57b8d66c12736c666f157a3afa3ff.jpg"
+          src="https://bloximages.chicago2.vip.townnews.com/pressofatlanticcity.com/content/tncms/assets/v3/editorial/7/3d/73df9447-43b4-551d-bd72-80fbf64ed4a0/59790e1da5ad7.image.jpg"
           class="card-img-top mt-3"
           alt="error loading image"
         />
@@ -116,14 +123,19 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </p>
-          <h5
-            class="card-text"
-          >"I rented this property in the summer of 2016 with my family. We explored Glacier National Park and went rafting on the Middle Fork! Watching the sunset and the deer play from the front porch was so serene, I could definitely see myself writing my next book here!"</h5>
+          <h5 class="card-text">
+            "I rented this property in the summer of 2016 with my family. We
+            explored Glacier National Park and went rafting on the Middle Fork!
+            Watching the sunset and the deer play from the front porch was so
+            serene, I could definitely see myself writing my next book here!"
+          </h5>
         </div>
       </div>
-      <div class="card col-12 col-md-3 height-fix my-1 bg-primary text-secondary shadow">
+      <div
+        class="card col-12 col-md-3 height-fix my-1 bg-primary text-secondary shadow"
+      >
         <img
-          src="https://headshotphotographerasheville.com/wp-content/uploads/headshots-in-asheville-3.jpg"
+          src="https://th.bing.com/th/id/OIP.t38N1An8WiAjUC6BJv7-4QHaLJ?pid=Api&rs=1"
           class="card-img-top mt-3"
           alt="error loading image"
         />
@@ -136,14 +148,19 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </p>
-          <h5
-            class="card-text"
-          >"This place has amazing potential, with enough space for an additional house up on the hill. One could put in a motorcross track, a nudist resort, a wedding venue, campground...the possibilites are endless!"</h5>
+          <h5 class="card-text">
+            "This place has amazing potential, with enough space for an
+            additional house up on the hill. One could put in a motorcross
+            track, a nudist resort, a wedding venue, campground...the
+            possibilites are endless!"
+          </h5>
         </div>
       </div>
-      <div class="card col-12 col-md-3 height-fix my-1 bg-primary text-secondary shadow">
+      <div
+        class="card col-12 col-md-3 height-fix my-1 bg-primary text-secondary shadow"
+      >
         <img
-          src="https://i1.wp.com/kinserstudios.com/wp-content/uploads/2019/06/man.png?fit=384%2C295&ssl=1"
+          src="https://i.pinimg.com/736x/a3/1f/45/a31f45a5241a56c974db96671c688f80--headshot-poses-actor-headshots.jpg"
           class="card-img-top mt-3"
           alt="error loading image"
         />
@@ -156,9 +173,12 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
           </p>
-          <h5
-            class="card-text"
-          >"Shared some quality time here with my family last winter. We enjoyed the wood fireplace, day trips to Big Mountain Ski resort. We were able to cross-country ski and snowshoe right from the house! The kids really enjoyed sledding and ice-skating on the pond."</h5>
+          <h5 class="card-text">
+            "Shared some quality time here with my family last winter. We
+            enjoyed the wood fireplace, day trips to Big Mountain Ski resort. We
+            were able to cross-country ski and snowshoe right from the house!
+            The kids really enjoyed sledding and ice-skating on the pond."
+          </h5>
         </div>
       </div>
     </div>
