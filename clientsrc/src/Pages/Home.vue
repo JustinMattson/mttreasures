@@ -31,7 +31,7 @@
               Lots of wild life (deer, elk, moose, bear, mountain lion, turtles,
               geese, turkeys, etc.)
             </li>
-            <li style="color:#033303;">- $ Serious Inquiries Only $ -</li>
+            <li style="color:#033303;">- $ 1.75 MILLION $ -</li>
           </ul>
           <h1>
             <i class="text-dark">Attractions:</i>
