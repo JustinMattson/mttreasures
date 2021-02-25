@@ -42,12 +42,12 @@
               Coram's Amazing Fun Center & Glacier Distilling Company
             </li>
             <li>
-              <small>(8 miles)</small>
-              Eight minutes from West Glacier and Glacier National Park
-            </li>
-            <li>
               <small>(7 miles)</small>
               Hungry Horse Dam/Reservoir - excellent boating, fishing, camping
+            </li>
+            <li>
+              <small>(8 miles)</small>
+              Eight minutes from West Glacier and Glacier National Park
             </li>
             <li>
               <small>(8 miles)</small>
