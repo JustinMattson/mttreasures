@@ -1,31 +1,29 @@
 {
-  "name": "clientsrc",
-  "version": "0.1.0",
-  "private": true,
+  "name": "name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "debug": "node index.js",
+    "start": "node index.js",
+    "dev": "node index.js",
+    "setup": "npm install"
   },
+  "author": "Codeworks",
+  "license": "ISC",
   "dependencies": {
-    "@bcwdev/auth0-vue": "0.0.7",
-    "acorn": "^7.1.1",
-    "axios": "^0.21.1",
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0",
-    "moment": "^2.27.0",
-    "popper.js": "^1.16.1",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
-    "socket.io-client": "^2.3.0",
-    "sweetalert": "^2.1.2",
-    "vue": "^2.6.11",
-    "vue-router": "^3.1.5",
-    "vuex": "^3.1.2"
+    "@bcwdev/auth0provider": "^1.0.5",
+    "acorn": "^8.0.5",
+    "cors": "^2.8.1",
+    "dotenv": "^8.1.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "mongoose": "^5.8.0",
+    "socket.io": "^2.3.0"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-router": "~4.2.0",
-    "@vue/cli-plugin-vuex": "~4.2.0",
-    "@vue/cli-service": "~4.2.0",
-    "vue-template-compiler": "^2.6.11"
+  "engines": {
+    "node": "^12.9.0",
+    "npm": "^6.9.0"
   }
 }
