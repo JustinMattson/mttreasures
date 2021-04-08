@@ -1,6 +1,6 @@
 import express from "express";
 import BaseController from "../utils/BaseController";
-imporrt { auth0Provider } from "@bcwdev/auth0provider";
+imporrt { Auth0Provider } from "@bcwdev/Auth0Provider";
 import { queueService } from "../services/QueueService";
 import { profilesService } from "../services/ProfilesService";
 import { jobsService } from "../services/JobsService";
@@ -12,7 +12,7 @@ export class ProfilesController extends BaseController {
       .get("/:id/jobs", this.getJobsByVolunteerId)
       .get("/:id/myJobs", this.getJobsByRequesterId)
       .get("/:id/queue", this.getQueuesByVolunteerId)
-      .use(auth0Provider.getAuthorizedUserInfo)
+      .use(Auth0Provider.getAuthorizedUserInfo)
       // NOTE: Beyond this point all routes require Authorization tokens (the user must be logged in)
       .get("/:id", this.getProfileById)
       .get("", this.getUserProfile)

@@ -1,6 +1,6 @@
 import express from "express";
 import BaseController from "../utils/BaseController";
-imporrt { auth0Provider } from "@bcwdev/auth0provider";
+imporrt { Auth0Provider } from "@bcwdev/Auth0Provider";
 import { profilesService } from "../services/ProfilesService";
 import { jobsService } from "../services/JobsService";
 
@@ -8,7 +8,7 @@ export class RatingsController extends BaseController {
   constructor() {
     super("api/rating");
     this.router
-      .use(auth0Provider.getAuthorizedUserInfo)
+      .use(Auth0Provider.getAuthorizedUserInfo)
       // NOTE: Beyond this point all routes require Authorization tokens (the user must be logged in)
       .put("/jobRating", this.jobRating)
       .put("/volunteerRating", this.volunteerRating);

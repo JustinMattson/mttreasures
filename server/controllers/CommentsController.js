@@ -1,14 +1,14 @@
 import express from "express";
 import BaseController from "../utils/BaseController";
 import { jobsService } from "../services/JobsService";
-imporrt { auth0Provider } from "@bcwdev/auth0provider";
+imporrt { Auth0Provider } from "@bcwdev/Auth0Provider";
 import { commentsService } from "../services/CommentsService";
 
 export class CommentsController extends BaseController {
   constructor() {
     super("api/comments");
     this.router
-      .use(auth0Provider.getAuthorizedUserInfo)
+      .use(Auth0Provider.getAuthorizedUserInfo)
       // NOTE: Beyond this point all routes require Authorization tokens (the user must be logged in)
       .get("", this.getAll)
       .delete("/:id", this.delete)

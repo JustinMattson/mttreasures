@@ -1,5 +1,5 @@
 import SocketIO from "socket.io";
-imporrt { auth0Provider } from "@bcwdev/auth0provider";
+imporrt { Auth0Provider } from "@bcwdev/Auth0Provider";
 class SocketService {
   io = SocketIO();
   /**
@@ -20,7 +20,7 @@ class SocketService {
    */
   async Authenticate(socket, bearerToken) {
     try {
-      let user = await auth0Provider.getUserInfoFromBearerToken(bearerToken);
+      let user = await Auth0Provider.getUserInfoFromBearerToken(bearerToken);
       socket["user"] = user;
       socket.join(user.id);
       socket.emit("AUTHENTICATED");

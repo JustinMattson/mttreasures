@@ -1,7 +1,7 @@
 import express from "express";
 import BaseController from "../utils/BaseController";
 import { jobsService } from "../services/JobsService";
-imporrt { auth0Provider } from "@bcwdev/auth0provider";
+imporrt { Auth0Provider } from "@bcwdev/Auth0Provider";
 import { commentsService } from "../services/CommentsService";
 import { queueService } from "../services/QueueService";
 import socketService from "../services/SocketService";
@@ -14,7 +14,7 @@ export class JobsController extends BaseController {
       .get("/all", this.getAll)
       .get("/:id", this.getJobById)
       .put("/:id/expire", this.changeJobStatus)
-      .use(auth0Provider.getAuthorizedUserInfo)
+      .use(Auth0Provider.getAuthorizedUserInfo)
       // NOTE: Beyond this point all routes require Authorization tokens (the user must be logged in)
       .get("/:id/comments", this.getCommentsByJobId)
       .get("/:id/queue", this.getQueuesByJobId)
