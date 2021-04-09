@@ -12,7 +12,7 @@
   "author": "Codeworks",
   "license": "ISC",
   "dependencies": {
-    "@bcwdev/Auth0Provider": "^1.0.5",
+    "@bcwdev/auth0Provider": "^1.0.5",
     "acorn": "^8.0.5",
     "cors": "^2.8.1",
     "dotenv": "^8.1.0",
