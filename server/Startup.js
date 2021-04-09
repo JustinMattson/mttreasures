@@ -3,7 +3,7 @@ import cors from "cors";
 import express from "express";
 import helmet from "helmet";
 import { RegisterControllers, Paths } from "../Setup";
-imporrt { Auth0Provider } from "@bcwdev/Auth0Provider";
+imporrt { Auth0Provider } from "@bcwdev/auth0Provider";
 import cleanupService from "./services/TestCleanupService";
 
 export default class Startup {
