@@ -1,6 +1,6 @@
 import express from "express";
 import BaseController from "../utils/BaseController";
-imporrt { Auth0Provider } from "@bcwdev/auth0Provider";
+imporrt { Auth0Provider } from "@bcwdev/auth0provider";
 import { queueService } from "../services/QueueService";
 import { profilesService } from "../services/ProfilesService";
 import { jobsService } from "../services/JobsService";

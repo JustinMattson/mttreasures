@@ -2,7 +2,7 @@ import express from "express";
 import BaseController from "../utils/BaseController";
 import { queueService } from "../services/QueueService";
 import { jobsService } from "../services/JobsService";
-imporrt { Auth0Provider } from "@bcwdev/auth0Provider";
+imporrt { Auth0Provider } from "@bcwdev/auth0provider";
 
 
 export class QueueController extends BaseController {
