@@ -35,8 +35,8 @@
           </span>-->
         </div>
         <h5 class="card-text text-left py-2">{{ job.description }}</h5>
-        <h6 class>General Location: {{ job.generalLocation }}</h6>
-        <p class>
+        <h6>General Location: {{ job.generalLocation }}</h6>
+        <p>
           <small>Post expires: {{ when }}</small>
         </p>
         <!-- <div>{{job.jobStatus}}</div> -->

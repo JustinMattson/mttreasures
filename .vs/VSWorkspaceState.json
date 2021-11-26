@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\clientsrc",
-    "\\clientsrc\\public",
     "\\clientsrc\\src",
     "\\clientsrc\\src\\components",
-    "\\clientsrc\\src\\Pages"
+    "\\clientsrc\\src\\Pages",
+    "\\clientsrc\\src\\store",
+    "\\server\\db"
   ],
-  "SelectedNode": "\\clientsrc\\src\\components\\navbar.vue",
+  "SelectedNode": "\\clientsrc\\src\\store\\index.js",
   "PreviewInSolutionExplorer": false
 }
