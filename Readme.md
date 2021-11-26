@@ -1,3 +1,7 @@
+[x] 2021-11-26: Updated 'job' edit to change status to 'pending' if date extended into the future.
+[x] 2021-11-26: Modifed navbar selection to collapse
+[x] Modify so to make available for MTTreasures.
+
 Welcome to Volunteer...Please Help Me!
 
 While participating in Rake-Up-Boise during the fall of 2019, my groups raked leaves from the yards of 

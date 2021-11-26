@@ -107,7 +107,7 @@
               <input type="date" v-model="job.startDate" /> Start Date
             </div>-->
             <div class="unbold">
-              <input type="date" v-model="job.endDate" /> End Date
+              Post Until: <input type="date" v-model="job.endDate" />
             </div>
             <br />
             <!-- dropdown -->

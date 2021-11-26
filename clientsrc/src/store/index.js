@@ -130,8 +130,7 @@ export default new Vuex.Store({
     },
     async editJob({ commit, dispatch }, update) {
       const date = Date.parse(new Date());
-      var ending = Date.parse(update.endDate)
-      debugger;
+      var ending = Date.parse(update.endDate);
       try {
         if (ending >= date) update.jobStatus = 'pending';
         let id = update.id;
