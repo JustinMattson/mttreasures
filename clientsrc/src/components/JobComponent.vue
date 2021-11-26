@@ -42,6 +42,7 @@
         <!-- <div>{{job.jobStatus}}</div> -->
         <div class="hide">{{expireCheck}}</div>
 
+
         <span class="d-flex justify-content-between" style="align-items:flex-end;">
           <router-link :to="{ name: 'job', params: { jobId: job.id } }">
             <button class="btn btn-secondary d-flex my-3 justify-content-center">
@@ -116,7 +117,11 @@ export default {
         this.$store.dispatch("changeJobStatus", this.job);
         this.$store.dispatch("removeOldJob", this.job.id);
         return "completed";
-      } else return "upcoming";
+      } else {
+        this.job.jobStatus = "pending";
+        this.$store.dispatch("changeJobStatus", this.job);
+        return "upcoming";
+      }
     },
   },
   methods: {

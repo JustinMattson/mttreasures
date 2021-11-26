@@ -76,8 +76,16 @@
           class="text-muted"
           v-show="!$auth.isAuthenticated"
         >Create account and log in for additional features ></small>
-        <button class="btn btn-success ml-2" @click="login" v-if="!$auth.isAuthenticated">Login</button>
-        <button class="btn btn-danger" @click="logout" v-else>logout</button>
+        <button 
+        data-toggle="collapse" data-target=".navbar-collapse.show"
+        class="btn btn-success ml-2" @click="login" v-if="!$auth.isAuthenticated">
+          Login
+        </button>
+        <button 
+        data-toggle="collapse" data-target=".navbar-collapse.show"
+        class="btn btn-danger" @click="logout" v-else>
+          Logout
+        </button>
       </span>
     </div>
   </nav>
