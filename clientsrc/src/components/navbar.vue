@@ -3,7 +3,9 @@
     <!-- <router-link class="navbar-brand" :to="{ name: 'Home' }">
       <img alt="Vue logo" src="../assets/logo.png" class="sml-img" />olen-Told
     </router-link>-->
-    <router-link class="navbar-brand bg-light rounded px-2" :to="{ name: 'Home' }">
+    <router-link 
+      data-toggle="collapse" data-target=".navbar-collapse.show"
+      class="navbar-brand bg-light rounded px-2" :to="{ name: 'Home' }">
       <img
         class="rotateImg180"
         alt="Vue logo"
@@ -37,7 +39,9 @@
           </router-link>
         </li>-->
         <li class="nav-item align-self-center" :class="{ active: $route.name == 'Jobs' }">
-          <router-link :to="{ name: 'Jobs' }" class="nav-link">
+          <router-link 
+            data-toggle="collapse" data-target=".navbar-collapse.show"
+            :to="{ name: 'Jobs' }" class="nav-link">
             <h5 class="text-secondary">Details</h5>
           </router-link>
         </li>
@@ -46,13 +50,17 @@
           v-if="$auth.isAuthenticated"
           :class="{ active: $route.name == 'Profile' }"
         >
-          <router-link class="nav-link" :to="{ name: 'Profile' }">
+          <router-link 
+            data-toggle="collapse" data-target=".navbar-collapse.show"
+            class="nav-link" :to="{ name: 'Profile' }">
             <h6 class="text-secondary">Profile</h6>
           </router-link>
         </li>
       </ul>
       <span v-show="$auth.isAuthenticated" class="mx-4">
-        <router-link class="nav-link" :to="{ name: 'Profile' }">
+        <router-link 
+          data-toggle="collapse" data-target=".navbar-collapse.show"
+          class="nav-link" :to="{ name: 'Profile' }">
           <h6 class="text-secondary">
             {{profile.name}}
             <img
