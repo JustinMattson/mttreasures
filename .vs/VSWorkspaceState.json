@@ -5,8 +5,7 @@
     "\\clientsrc\\src",
     "\\clientsrc\\src\\components",
     "\\clientsrc\\src\\Pages",
-    "\\clientsrc\\src\\store",
-    "\\server\\db"
+    "\\clientsrc\\src\\store"
   ],
   "SelectedNode": "\\clientsrc\\src\\store\\index.js",
   "PreviewInSolutionExplorer": false
